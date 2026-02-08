@@ -24,7 +24,7 @@ const proyectos = [
   },
   {
     titulo: 'Capacitación Comité Paritario',
-    cliente: 'De marca',
+    cliente: 'Demarka',
     descripcion: 'Programa de formación continua para comités paritarios de faena Indutrial.',
     categoria: 'Industria',
     resultado: '150 trabajadores capacitados'
