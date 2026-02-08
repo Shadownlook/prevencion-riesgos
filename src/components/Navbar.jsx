@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import previseoLogo from '../assets/previseo-logo.png'
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
@@ -14,7 +15,7 @@ export default function Navbar() {
           {/* LOGO */}
           <a href="#inicio" className="navbar-logo">
             <img 
-              src="/previseo-logo.png" 
+              src={previseoLogo} 
               alt="Previseo Logo" 
               className="navbar-logo-img"
             />

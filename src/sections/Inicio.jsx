@@ -1,4 +1,5 @@
 import Reveal from '../components/Reveal'
+import previseoLogo from '../assets/previseo-logo.png'
 
 export default function Inicio() {
   return (
@@ -7,7 +8,7 @@ export default function Inicio() {
       <Reveal delay={0}>
         <div className="hero-logo-container">
           <img 
-            src="/previseo-logo.png" 
+            src={previseoLogo} 
             alt="Previseo Logo" 
             className="hero-logo"
           />
