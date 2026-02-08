@@ -6,11 +6,11 @@ export default function Inicio() {
     <section id="inicio" className="hero">
       
       <Reveal delay={0}>
-        <div className="hero-logo-container">
+        <div className="hero-main-logo-container">
           <img 
             src={previseoLogo} 
-            alt="Previseo Logo" 
-            className="hero-logo"
+            alt="Previseo Logo Principal" 
+            className="hero-main-logo"
           />
         </div>
       </Reveal>

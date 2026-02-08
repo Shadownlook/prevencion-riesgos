@@ -309,9 +309,54 @@ body {
   pointer-events: none;
 }
 
-/* Hero Logo */
+/* Hero Main Logo (Above Title) */
+.hero-main-logo-container {
+  margin-bottom: 48px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-main-logo {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1), filter 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  animation: heroMainLogoFadeIn 1.2s ease forwards;
+  filter: drop-shadow(0 6px 20px rgba(0,0,0,0.35));
+}
+
+.hero-main-logo:hover {
+  transform: scale(1.03);
+  filter: drop-shadow(0 12px 40px rgba(59,130,246,0.45)) brightness(1.05);
+}
+
+@keyframes heroMainLogoFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-main-logo {
+    max-width: 200px;
+  }
+  .hero-main-logo-container {
+    margin-bottom: 32px;
+  }
+}
+
+/* Hero Secondary Logo */
 .hero-logo-container {
-  margin-bottom: 36px;
+  margin-bottom: 24px;
   position: relative;
   z-index: 1;
   display: flex;
@@ -320,7 +365,7 @@ body {
 }
 
 .hero-logo {
-  max-width: 200px;
+  max-width: 140px;
   width: 100%;
   height: auto;
   transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1), filter 0.5s ease, opacity 0.5s ease;
@@ -347,10 +392,10 @@ body {
 
 @media (max-width: 768px) {
   .hero-logo {
-    max-width: 140px;
+    max-width: 100px;
   }
   .hero-logo-container {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
 }
 
