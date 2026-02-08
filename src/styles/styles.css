@@ -69,21 +69,24 @@ body {
   color: white;
   letter-spacing: -0.5px;
   transition: transform 0.3s ease, filter 0.3s ease;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-logo:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .navbar-logo-img {
-  height: 45px;
+  height: 42px;
   width: auto;
-  transition: transform 0.3s ease, filter 0.3s ease;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), filter 0.4s ease, opacity 0.4s ease;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
 }
 
 .navbar-logo:hover .navbar-logo-img {
   transform: scale(1.08);
-  filter: brightness(1.1);
+  filter: drop-shadow(0 4px 12px rgba(59,130,246,0.4)) brightness(1.1);
 }
 
 .navbar-logo span {
@@ -308,29 +311,33 @@ body {
 
 /* Hero Logo */
 .hero-logo-container {
-  margin-bottom: 32px;
+  margin-bottom: 40px;
   position: relative;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-logo {
-  max-width: 200px;
+  max-width: 220px;
   width: 100%;
   height: auto;
-  transition: transform 0.4s ease, filter 0.4s ease, opacity 0.4s ease;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), filter 0.5s ease, opacity 0.5s ease;
   opacity: 0;
-  animation: heroLogoFadeIn 0.8s ease forwards;
+  animation: heroLogoFadeIn 1s ease forwards;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.25));
 }
 
 .hero-logo:hover {
   transform: scale(1.08);
-  filter: brightness(1.1) drop-shadow(0 0 20px rgba(59,130,246,0.3));
+  filter: drop-shadow(0 8px 32px rgba(59,130,246,0.5)) brightness(1.1);
 }
 
 @keyframes heroLogoFadeIn {
   0% {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(-30px);
   }
   100% {
     opacity: 1;
@@ -340,10 +347,10 @@ body {
 
 @media (max-width: 768px) {
   .hero-logo {
-    max-width: 150px;
+    max-width: 160px;
   }
   .hero-logo-container {
-    margin-bottom: 24px;
+    margin-bottom: 28px;
   }
 }
 
