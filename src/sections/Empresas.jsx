@@ -4,6 +4,7 @@ import Crionlogo from '../assets/Cirion-logo.png'
 import volcanlogo from '../assets/volcan-logo.png'
 import mendez from '../assets/Mendes-Holler.png'
 import astrad from '../assets/astad-logo.png'
+import ufinet from '../assets/ufinet-logo.png'
 import '../styles/empresas.css'
 
 const clientes = [
@@ -11,6 +12,7 @@ const clientes = [
   { nombre: 'Cirion', sector: 'Datacenter', logo: Crionlogo },
   { nombre: 'Volcan', sector: 'Industria', logo: volcanlogo },
   { nombre: 'Méndez Holler', sector: 'Construccion', logo: mendez },
+  { nombre: 'Ufinet', sector: 'Datacenter', logo: ufinet },
   { nombre: 'Astrad', sector: 'Industria', logo: astrad },
 
 ]
@@ -24,7 +26,7 @@ export default function Clientes() {
           Como <strong>Prevencionista de Riesgos Laborales independiente certificado</strong>, he tenido el privilegio 
           de asesorar a empresas destacadas, contribuyendo a ambientes laborales más seguros 
           y el cumplimiento normativo. <strong>Todas las evaluaciones, inspecciones y auditorías</strong> 
-          son realizadas exclusivamente por el prevencionista certificado conforme al <strong>DS 44</strong> y <strong>Ley 16.744</strong>.
+           son realizadas exclusivamente por el prevencionista certificado conforme al <strong>DS 44</strong> y <strong>Ley 16.744</strong>.
         </p>
       </div>
 
