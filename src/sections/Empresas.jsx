@@ -7,6 +7,7 @@ import astrad from '../assets/astad-logo.png'
 import '../styles/empresas.css'
 
 const clientes = [
+  { nombre: 'Previseo', sector: 'Minero', logo: '/previseo-logo.png' },
   { nombre: 'Aza acero sostenible', sector: 'Industria', logo: azaLogo },
   { nombre: 'Cirion', sector: 'Datacenter', logo: Crionlogo },
   { nombre: 'Volcan', sector: 'Industria', logo: volcanlogo },
