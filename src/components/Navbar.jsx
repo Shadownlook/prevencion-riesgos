@@ -12,9 +12,13 @@ export default function Navbar() {
         <div className="navbar-container">
 
           {/* LOGO */}
-          <div className="navbar-logo">
-            <span>Previseo</span>
-          </div>
+          <a href="#inicio" className="navbar-logo">
+            <img 
+              src="/previseo-logo.png" 
+              alt="Previseo Logo" 
+              className="navbar-logo-img"
+            />
+          </a>
 
           {/* BOTÓN MOBILE */}
           <button

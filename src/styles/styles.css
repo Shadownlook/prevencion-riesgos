@@ -68,11 +68,22 @@ body {
   font-weight: 800;
   color: white;
   letter-spacing: -0.5px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .navbar-logo:hover {
   transform: scale(1.05);
+}
+
+.navbar-logo-img {
+  height: 45px;
+  width: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.navbar-logo:hover .navbar-logo-img {
+  transform: scale(1.08);
+  filter: brightness(1.1);
 }
 
 .navbar-logo span {
@@ -293,6 +304,47 @@ body {
     radial-gradient(circle at 80% 20%, rgba(139,92,246,0.08) 0%, transparent 30%),
     radial-gradient(circle at 50% 80%, rgba(37,99,235,0.1) 0%, transparent 35%);
   pointer-events: none;
+}
+
+/* Hero Logo */
+.hero-logo-container {
+  margin-bottom: 32px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-logo {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease, filter 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+  animation: heroLogoFadeIn 0.8s ease forwards;
+}
+
+.hero-logo:hover {
+  transform: scale(1.08);
+  filter: brightness(1.1) drop-shadow(0 0 20px rgba(59,130,246,0.3));
+}
+
+@keyframes heroLogoFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-logo {
+    max-width: 150px;
+  }
+  .hero-logo-container {
+    margin-bottom: 24px;
+  }
 }
 
 .hero-content {

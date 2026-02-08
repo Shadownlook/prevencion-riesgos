@@ -4,7 +4,17 @@ export default function Inicio() {
   return (
     <section id="inicio" className="hero">
       
-      <Reveal>
+      <Reveal delay={0}>
+        <div className="hero-logo-container">
+          <img 
+            src="/previseo-logo.png" 
+            alt="Previseo Logo" 
+            className="hero-logo"
+          />
+        </div>
+      </Reveal>
+
+      <Reveal delay={0.15}>
         <h1>
           Expertos en <span>Prevención de Riesgos</span> Laborales
         </h1>
