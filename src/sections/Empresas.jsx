@@ -5,6 +5,7 @@ import volcanlogo from '../assets/volcan-logo.png'
 import mendez from '../assets/Mendes-Holler.png'
 import astrad from '../assets/astad-logo.png'
 import ufinet from '../assets/ufinet-logo.png'
+import demarka from '../assets/demarka-logo.png'
 import '../styles/empresas.css'
 
 const clientes = [
@@ -13,6 +14,7 @@ const clientes = [
   { nombre: 'Volcan', sector: 'Industria', logo: volcanlogo },
   { nombre: 'Méndez Holler', sector: 'Construccion', logo: mendez },
   { nombre: 'Ufinet', sector: 'Datacenter', logo: ufinet },
+  { nombre: 'Demarka', sector: 'Industria', logo: demarka },
   { nombre: 'Astrad', sector: 'Industria', logo: astrad },
 
 ]
