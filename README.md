@@ -1,57 +1,51 @@
-# Prevención de Riesgos
+# Prevención de Riesgos ASTAD
 
-Sitio web corporativo para servicios de prevención de riesgos laborales.
+Sitio web corporativo para servicios de prevención de riesgos laborales y seguridad ocupacional.
 
-## Despliegue en GitHub Pages
+## Sobre Nosotros
 
-### Pasos para desplegar:
+ASTAD es una empresa líder en servicios de prevención de riesgos laborales, comprometida con la seguridad y bienestar de los trabajadores en Chile. Brindamos soluciones integrales para empresas de diversos sectores industriales.
 
-1. **Crear repositorio en GitHub**
-   - Crear un nuevo repositorio público en GitHub
-   - Nombre sugerido: `prevencion-riesgos`
+## Servicios
 
-2. **Subir el proyecto**
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit"
-   git branch -M main
-   git remote add origin https://github.com/TU_USUARIO/prevencion-riesgos.git
-   git push -u origin main
-   ```
+- Evaluación de riesgos laborales
+- Procedimientos de auditorías de seguridad
+- Capacitación en seguridad ocupacional
+- Inspecciones de seguridad
+- Investigación de accidentes
+- Planes de emergencia
+- Verificación de cumplimiento normativo
 
-3. **Configurar GitHub Pages**
-   - Ir a Settings > Pages
-   - Source: "Deploy from a branch"
-   - Branch: "gh-pages" (o "main" si usas Actions)
-   - Folder: "/ (root)"
+## Proyectos
 
-4. **Desplegar automáticamente**
-   El proyecto ya tiene configurado `gh-pages` en el package.json:
-   ```bash
-   npm run deploy
-   ```
+Contamos con experiencia trabajando con empresas líderes del sector minero, energético, logístico e industrial:
 
-   O puedes usar GitHub Actions para despliegue automático.
-
-### Scripts disponibles
-
-- `npm run dev` - Servidor de desarrollo
-- `npm run build` - Build para producción
-- `npm run preview` - Previsualizar build local
-- `npm run deploy` - Desplegar a GitHub Pages
-
-## Configuración
-
-El proyecto usa Vite con base configurada para `/prevencion-riesgos/`. Si tu repositorio tiene un nombre diferente, actualiza `vite.config.js`:
-
-```js
-base: '/NOMBRE_DEL_REPOSITORIO/',
-```
+- Volcán
+- Cirion
+- Aza
+- Mendes Holler
 
 ## Tecnologías
 
-- React 19
-- Vite
-- Framer Motion
-- Express (servidor local)
+- React 19 + Vite
+- Framer Motion para animaciones
+- Node.js + Express
+- Diseño responsive
+
+## Desarrollo
+
+```bash
+npm install
+npm run dev
+```
+
+## Deployment
+
+```bash
+npm run build
+npm run deploy
+```
+
+## Contacto
+
+Para más información sobre nuestros servicios, contáctanos a través de nuestra sección de contacto en el sitio web.
