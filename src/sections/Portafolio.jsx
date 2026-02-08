@@ -33,7 +33,7 @@ const proyectos = [
     titulo: 'Auditoría de Cumplimiento',
     cliente: 'Aza Acero Sostenible',
     descripcion: 'Auditoría preventiva y acompañamiento en fiscalización de organismos competentes.',
-    categoria: 'Telecomunicaciones',
+    categoria: 'Industria',
     resultado: 'Aprobación sin observaciones'
   },
   {
